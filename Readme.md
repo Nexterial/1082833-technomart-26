@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [OLEKSANDR NEDZVETSKYI](https://up.htmlacademy.ru/htmlcss/26/user/1082833).
-* Наставник: `Шамиль Асланов`.
+* Наставник: [Шамиль Асланов](https://htmlacademy.ru/profile/id1103629).
 
 ---
 
