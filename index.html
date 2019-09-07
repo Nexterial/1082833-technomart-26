@@ -6,15 +6,15 @@
 </head>
 <body>
 <header>
+		<!--убрал тег нав так как это не является навигацией -->
+		<img src="https://via.placeholder.com/150x100." width="" height="" alt="Логотип ТЕХНОМАРТ">
 	<nav>
-		<img src="img" width="" height="" alt="Логотип ТЕХНОМАРТ">
 		<ul>
 		<li><a href="">Закладки</a></li>
 		<li><a href="">Корзина</a></li>
 	    </ul>
-	    <ul>
-	    	<li><button type="button">Оформить заказ</button></li>
-	    </ul>
+	    <a href="">Оформить заказ</a>
+	    <!-- исправил кнопку на ссылку -->
 	</nav>
 	<p><i>Интернет-магазин<br>
 	   строительных материалов<br>
@@ -22,9 +22,11 @@
 	</p>
 	<p> +7(812) 555-05-55<br>
       г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-	</p>
-	<button type="button">Войти</button>
-	<button type="button">Регистрация</button>
+	</p><ul>
+	<li><button type="button">Войти</button></li>
+	<li><button type="button">Регистрация</button></li>
+	   <!-- Объеденил войти и регистрация в список т.к это является однородными элементами --> 
+	    </ul>
 	<nav>
 		<ul>
 			<li><a href="">Главная</a></li>
@@ -37,15 +39,17 @@
 		</ul> 
 	</nav>
 </header>
-<!-- информация ссылки изображения блоки и тд, то что будет скоро верстаться-->
+<main>
+	<h1>Компания Техномарт</h1>
+	<section>
+		<h2>Контакты</h2>
+	</section>
 
 
-
-
-
-
+</main>
 <footer>
-	<a href=""><img src="sdsd" weight="" height="" alt="Логотип ТЕХНОМАРТ"></a>
+	<a href=""><img src="https://via.placeholder.com/150x100." weight="" height="" alt="Логотип ТЕХНОМАРТ"></a>
+	<!-- вставил ссылки изображений--> 
 <p>г.Санкт-Петербург, ул Б.Конюшенная,д.19/8<br>
 +7(812) 555-05-55
 </p>
@@ -73,9 +77,9 @@
 		<li><a href="Instagram.com">Инстаграмм</a></li>
 	</ul>
 	<p> Обратная связь:<br>
-	    <a href="htmlacademy.ru">mail@htmlacademy.ru</a></p>
+	    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
 	    <p>Разработано-<br>
-	       <a href="htmlacademy.ru">htmlacademy.ru</a></p>
+	       <a href="https://up.htmlacademy.ru/htmlcss/26/project/technomart#specification">htmlacademy.ru</a></p>
 </nav>
 </footer>
 </body>
