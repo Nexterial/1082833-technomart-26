@@ -4,13 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>ТЕХНОМАРТ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
     <img src="img/logo.svg" width="" height="" alt="Логотип ТЕХНОМАРТ">
     <ul>
-      <li><img src="img/search.svg" width="" height="" alt="Поиск"><span>Поиск</span></li>
+      <li><img src="img/search.svg" width="" height="" alt="Поиск">
+        <form action=""><label for="search">Поиск</label><input type="text" id="search"></form>
+      </li>
       <li><img src="img/bookmark.svg" width="" height="" alt="Закладки"><a href="">Закладки</a></li>
       <li><img src="img/cart.svg" width="" height="" alt="Корзина"><a href="">Корзина</a></li>
     </ul>
@@ -87,6 +90,17 @@
     <p>Разработано-<br>
       <a href="https://up.htmlacademy.ru/htmlcss/26/project/technomart#specification">htmlacademy.ru</a></p>
   </footer>
+  <div>
+      <form action="">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name">
+        <label for="mail">Ваш e-mail:</label>
+        <input type="text" id="mail">
+        <label for="text">Текст письма:</label>
+        <textarea type="comment" id="text" rows="4">в свободной форме</textarea>
+        <input type="submit" value="ОТПРАВИТЬ">
+      </form>
+    </div>
 </body>
 
 </html>

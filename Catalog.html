@@ -4,13 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>ТЕХНОМАРТ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
     <img src="img/logo.svg" width="" height="" alt="Логотип ТЕХНОМАРТ">
     <ul>
-      <li><img src="img/search.svg" width="" height="" alt="Поиск"><span>Поиск</span></li>
+      <li><img src="img/search.svg" width="" height="" alt="Поиск">
+        <form action=""><label for="search">Поиск</label><input type="text" id="search"></form>
+      </li>
       <li><img src="img/bookmark.svg" width="" height="" alt="Закладки"><a href="">Закладки</a></li>
       <li><img src="img/cart.svg" width="" height="" alt="Корзина"><a href="">Корзина</a></li>
     </ul>
@@ -47,6 +50,26 @@
       <li><a href=""></a>Перфораторы</li>
     </ol>
     <h1>Перфораторы</h1>
+    <form class="filter" method="GET" action="">
+      <fieldset>
+        <legend>Производители</legend>
+        <ul>
+          <li class="filter-option"><input type="checkbox" name="Bosch">Bosch</li>
+          <li class="filter-option"><input type="checkbox" name="ИНТЕРСКОЛ">ИНТЕРСКОЛ</li>
+          <li class="filter-option"><input type="checkbox" name="MAKITA">MAKITA</li>
+          <li class="filter-option"><input type="checkbox" name="DEWALT">DEWALT</li>
+          <li class="filter-option"><input type="checkbox" name="HITACHI">HITACHI</li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Питание</legend>
+        <ul>
+          <li class="filter-option"><input type="radio" name="АККУМУЛЯТОРНЫЕ">АККУМУЛЯТОРНЫЕ</li>
+          <li class="filter-option"><input type="radio" name="СЕТЕВЫЕ">СЕТЕВЫЕ</li>
+        </ul>
+      </fieldset>
+      <button type=""> </button>
+    </form>
     <section>
       <ul>
         <li><img src="img/perforator-2000-3000.jpg" width="" height="" alt="Перфоратор Bosch BFG 3000">
@@ -122,6 +145,11 @@
     <p>Разработано-<br>
       <a href="https://up.htmlacademy.ru/htmlcss/26/project/technomart#specification">htmlacademy.ru</a></p>
   </footer>
+  <div>
+  <h3> Товар добавлен в корзину!</h3>
+  <p><a href="">ОФОРМИТЬ ЗАКАЗ</a></p>
+  <p><a href="">ПРОДОЛЖИТЬ ПОКУПКИ</a></p>
+  </div>
 </body>
 
 </html>
