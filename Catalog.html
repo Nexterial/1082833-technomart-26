@@ -12,7 +12,7 @@
     <img src="img/logo.svg" width="" height="" alt="Логотип ТЕХНОМАРТ">
     <ul>
       <li><img src="img/search.svg" width="" height="" alt="Поиск">
-        <form action=""><label for="search">Поиск</label><input type="text" id="search"></form>
+        <form action=""><label for="search">Поиск</label><input type="text" id="search" placeholder="Поиск"></form>
       </li>
       <li><img src="img/bookmark.svg" width="" height="" alt="Закладки"><a href="">Закладки</a></li>
       <li><img src="img/cart.svg" width="" height="" alt="Корзина"><a href="">Корзина</a></li>
@@ -50,25 +50,40 @@
       <li><a href=""></a>Перфораторы</li>
     </ol>
     <h1>Перфораторы</h1>
+    <div><span>ФИЛЬТР</span>
+      <span>
+        <ol>СОРТИРОВКА</ol>
+        <li>По ЦЕНЕ</li>
+        <li>ПО ТИПУ</li>
+        <li>ПО ФУНКЦИОНАЛУ</li>
+      </span></div>
     <form class="filter" method="GET" action="">
-      <fieldset>
-        <legend>Производители</legend>
-        <ul>
-          <li class="filter-option"><input type="checkbox" name="Bosch">Bosch</li>
-          <li class="filter-option"><input type="checkbox" name="ИНТЕРСКОЛ">ИНТЕРСКОЛ</li>
-          <li class="filter-option"><input type="checkbox" name="MAKITA">MAKITA</li>
-          <li class="filter-option"><input type="checkbox" name="DEWALT">DEWALT</li>
-          <li class="filter-option"><input type="checkbox" name="HITACHI">HITACHI</li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend>Питание</legend>
-        <ul>
-          <li class="filter-option"><input type="radio" name="АККУМУЛЯТОРНЫЕ">АККУМУЛЯТОРНЫЕ</li>
-          <li class="filter-option"><input type="radio" name="СЕТЕВЫЕ">СЕТЕВЫЕ</li>
-        </ul>
-      </fieldset>
-      <button type=""> </button>
+      <div><label for="range"><b>ЦЕНА:</b></label>
+        0<input type="range" name="range" id="range">30000</div>
+      <div>
+        <fieldset>
+          <legend>Производители</legend>
+          <ul>
+            <li class="filter-option"><input type="checkbox" name="Bosch">Bosch</li>
+            <li class="filter-option"><input type="checkbox" name="ИНТЕРСКОЛ">ИНТЕРСКОЛ</li>
+            <li class="filter-option"><input type="checkbox" name="MAKITA">MAKITA</li>
+            <li class="filter-option"><input type="checkbox" name="DEWALT">DEWALT</li>
+            <li class="filter-option"><input type="checkbox" name="HITACHI">HITACHI</li>
+          </ul>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Питание</legend>
+          <ul>
+            <li class="filter-option"><input type="radio" id="Battery" name="АККУМУЛЯТОРНЫЕ">
+              <label for="Battery">АККУМУЛЯТОРНЫЕ</label></li>
+            <li class="filter-option"><input type="radio" id="Battery1" name="СЕТЕВЫЕ">
+              <label for="Battery1">СЕТЕВЫЕ</label></li>
+          </ul>
+        </fieldset>
+      </div>
+      <input type="submit" name="button" value="Показать">
     </form>
     <section>
       <ul>
@@ -115,7 +130,20 @@
           <p>12500 P.</p>
         </li>
       </ul>
+      <button type="button" name="page">1</button>
+      <button type="button" name="page">2</button>
+      <button type="button" name="page">3</button>
+      <button type="button" name="page">СЛЕДУЮЩАЯ</button>
     </section>
+    <div>
+      <h3>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
+      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+        бетоне и камне.
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+        шуруповерта и отбойного молотка. В<br>
+        ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
+        дрель.</p>
+    </div>
   </main>
   <footer>
     <a href=""><img src="img/logo.svg" width="" height="" alt="Логотип ТЕХНОМАРТ"></a>
@@ -146,9 +174,9 @@
       <a href="https://up.htmlacademy.ru/htmlcss/26/project/technomart#specification">htmlacademy.ru</a></p>
   </footer>
   <div>
-  <h3> Товар добавлен в корзину!</h3>
-  <p><a href="">ОФОРМИТЬ ЗАКАЗ</a></p>
-  <p><a href="">ПРОДОЛЖИТЬ ПОКУПКИ</a></p>    
+    <h3> Товар добавлен в корзину!</h3>
+    <p><a href="">ОФОРМИТЬ ЗАКАЗ</a></p>
+    <p><a href="">ПРОДОЛЖИТЬ ПОКУПКИ</a></p>
   </div>
 </body>
 
