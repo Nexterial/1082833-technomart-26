@@ -4,26 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>ТЕХНОМАРТ</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <img src="img/logo.svg" width="" height="" alt="Логотип ТЕХНОМАРТ">
-    <ul>
-      <li><img src="img/search.svg" width="" height="" alt="Поиск">
-        <form action=""><label for="search">Поиск</label><input type="text" id="search" placeholder="Поиск"></form>
-      </li>
-      <li><img src="img/bookmark.svg" width="" height="" alt="Закладки"><a href="">Закладки</a></li>
-      <li><img src="img/cart.svg" width="" height="" alt="Корзина"><a href="">Корзина</a></li>
-    </ul>
+  <header class="main-header">
+    <div class="top-bar">
+      <div class="logo">
+      </div>
+      <img src="img/search.svg" width="" height="" alt="Поиск">
+        <form class="" action="">
+          <label for="search">Поиск</label>
+          <input type="text" id="search" placeholder="Поиск">
+        </form>
+      <img src="img/bookmark.svg" width="" height="" alt="Закладки"><a href="">Закладки</a>
+      <img src="img/cart.svg" width="" height="" alt="Корзина"><a href="">Корзина</a>
     <a href="">Оформить заказ</a>
-    <p class="header-info"><i>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта<br></i>
+  </div>
+    <p class="header-info">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта<br>
     </p>
-    <p><img src="img/phone.svg" width="" height="" alt="Телефон"><span class="phone-style">+7(812) 555-05-55</span><br>г.Санкт-Петербург,
-      ул.Б.Конюшенная, д.19/8
-    </p>
+    <div><img src="img/phone.svg" width="" height="" alt="Телефон"><p class="phone">+7(812) 555-05-55</p><br>
+    <address class="address">г.Санкт-Петербург,
+      ул.Б.Конюшенная, д.19/8</address>
+    </div> 
     <ul>
       <li>
         <img src="img/user.svg" width="" height="" alt="Пользователь">Равшан Джамшутович</li>
@@ -31,7 +35,7 @@
       <li><a href=""></a>Личный кабинет</li>
       <img src="img/logout.svg" width="" height="" alt="Выход">
     </ul>
-    <nav class="main-navigation menu-back">
+    <nav class="main-navigation">
       <ul class="site-navigation">
         <li><a href="">Главная</a></li>
         <li><a href="">Компания</a></li>
@@ -88,55 +92,61 @@
       </div>
       <input type="submit" name="button" value="Показать">
     </form>
-    <section class="content">
-      <ul>
+    <section class="products">
+      <ul class="products-list">
         <li><img src="img/perforator-2000-3000.jpg" width="" height="" alt="Перфоратор Bosch BFG 3000">
           <h2>Перфоратор Bosch BFG 3000</h2>
-          <del>22500 P.</del>
-          <p>15500 P.</p>
+          <del class="old-price">22500 P.</del>
+          <p class="new-price">15500 P.</p>
         </li>
         <li><img src="img/perforator-6000.jpg" width="" height="" alt="Перфоратор Bosch BFG 6000">
           <h2>Перфоратор Bosch BFG 6000</h2>
-          <del>30500 P.</del>
-          <p>25500 P.</p>
+          <del class="old-price">30500 P.</del>
+          <p class="new-price">25500 P.</p>
         </li>
-        <li><img src="img/perforator-2000-3000.jpg" width="" height="" alt="Перфоратор Bosch BFG 2000 НОВИНКА">
+        <li>
+          <img class="new-product" src="img/new-flag.png" width="60" height="59">
+          <img src="img/perforator-2000-3000.jpg" width="" height="" alt="Перфоратор Bosch BFG 2000 НОВИНКА">
           <h2>Перфоратор Bosch BFG 2000</h2>
-          <p>12500 P.</p>
+          <p class="new-price">12500 P.</p>
         </li>
         <li><img src="img/perforator-2000-3000.jpg" width="" height="" alt="Перфоратор Bosch BFG 3000">
           <h2>Перфоратор Bosch BFG 3000</h2>
-          <del>22500 P.</del>
-          <p>15500 P.</p>
+          <del class="old-price">22500 P.</del>
+          <p class="new-price">15500 P.</p>
         </li>
-        <li><img src="img/perforator-6000.jpg" width="" height="" alt="Перфоратор Bosch BFG 6000">
+        <li>
+          <img class="new-product" src="img/new-flag.png" width="60" height="59">
+          <img src="img/perforator-6000.jpg" width="" height="" alt="Перфоратор Bosch BFG 6000">
           <h2>Перфоратор Bosch BFG 6000</h2>
-          <del>30500 P.</del>
-          <p>25500 P.</p>
+          <del class="old-price">30500 P.</del>
+          <p class="new-price">25500 P.</p>
         </li>
         <li><img src="img/perforator-2000-3000.jpg" width="" height="" alt="Перфоратор Bosch BFG 2000 НОВИНКА">
           <h2>Перфоратор Bosch BFG 2000</h2>
-          <p>12500 P.</p>
+          <p class="new-price">12500 P.</p>
         </li>
-        <li><img src="img/perforator-2000-3000.jpg" width="" height="" alt="Перфоратор Bosch BFG 3000">
+        <li>
+          <img class="new-product" src="img/new-flag.png" width="60" height="59">
+          <img src="img/perforator-2000-3000.jpg" width="" height="" alt="Перфоратор Bosch BFG 3000">
           <h2>Перфоратор Bosch BFG 3000</h2>
-          <del>22500 P.</del>
-          <p>15500 P.</p>
+          <del class="old-price">22500 P.</del>
+          <p class="new-price">15500 P.</p>
         </li>
         <li><img src="img/perforator-6000.jpg" width="" height="" alt="Перфоратор Bosch BFG 6000">
           <h2>Перфоратор Bosch BFG 6000</h2>
-          <del>30500 P.</del>
-          <p>25500 P.</p>
+          <del class="old-price">30500 P.</del>
+          <p class="new-price">25500 P.</p>
         </li>
         <li><img src="img/perforator-2000-3000.jpg" width="" height="" alt="Перфоратор Bosch BFG 2000 НОВИНКА">
           <h2>Перфоратор Bosch BFG 2000</h2>
-          <p>12500 P.</p>
+          <p class="new-price">12500 P.</p>
         </li>
       </ul>
       <a href="">1</a>
-      <a href="">2</button>
-        <a href="">3</button>
-          <a href="">СЛЕДУЮЩАЯ</button>
+      <a href="">2</a>
+        <a href="">3</a>
+          <a href="">СЛЕДУЮЩАЯ</a>
     </section>
     <div>
       <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
@@ -148,33 +158,34 @@
         дрель.</p>
     </div>
   </main>
-  <footer>
-    <a href=""><img src="img/logo.svg" width="" height="" alt="Логотип ТЕХНОМАРТ"></a>
-    <p>г.Санкт-Петербург, ул Б.Конюшенная,д.19/8<br>+7(812) 555-05-55
-    </p>
-    <p>2010-2019 Компания "Техномарт"<br>Все права защищены</p>
-    <ul class="list1">
-      <li class="licolorW"><a href="">Компания</a></li>
-      <li class="licolorW"><a href="">Новости</a></li>
-      <li class="licolorW"><a href="сatalog.html">Каталог</a></li>
-      <li class="licolorW"><a href="">Доставка</a></li>
-      <li class="licolorW"><a href="">Контакты</a></li>
+  <footer class="main-footer">
+      <a class="logo" href=""><img src="img/logo.svg" weight="" height="" alt="Логотип ТЕХНОМАРТ"></a>
+    <address class="footer-address">г.Санкт-Петербург, ул Б.Конюшенная,д.19/8 <br>+7(812) 555-05-55</address>
+    <ul class="footer-nav">
+      <li class="footer-main-nav"><a href="">Компания</a></li>
+      <li class="footer-main-nav"><a href="">Новости</a></li>
+      <li class="footer-main-nav"><a href="сatalog.html">Каталог</a></li>
+      <li class="footer-main-nav"><a href="">Доставка</a></li>
+      <li class="footer-main-nav"><a href="">Контакты</a></li>
     </ul>
-    <ul class="list2">
-      <li class="licolorB"><a href="">Материалы</a></li>
-      <li class="licolorB"><a href="">Техника</a></li>
-      <li class="licolorB"><a href="">Инструмент</a></li>
-      <li class="licolorB"><a href="">Спецпредложения</a></li>
+    <ul class="footer-catalog">
+      <li class="footer-main-catalog"><a href="">Материалы</a></li>
+      <li class="footer-main-catalog"><a href="">Техника</a></li>
+      <li class="footer-main-catalog"><a href="">Инструмент</a></li>
+      <li class="footer-main-catalog"><a href="">Спецпредложения</a></li>
     </ul>
-    <ul>
-      <li><img src="img/vk.svg" width="" height="" alt="Вконтакте"><a href="vk.com">Вконтакте</a></li>
-      <li><img src="img/fb.svg" width="" height="" alt="Фейсбук"><a href="facebook.com">Фейсбук</a></li>
-      <li><img src="img/inst.svg" width="" height="" alt="Инстаграмм"><a href="instagram.com">Инстаграмм</a></li>
+    
+    <div class="footer-contacts"><p>2010-2019 Компания "Техномарт"<br>Все права защищены</p>
+    <ul class="social-network">
+      <li><a href="vk.com"><img src="img/vk.svg" width="" height="" alt="Вконтакте"></a></li>
+      <li><a href="facebook.com"><img src="img/fb.svg" width="" height="" alt="Фейсбук"></a></li>
+      <li><a href="instagram.com"><img src="img/inst.svg" width="" height="" alt="Инстаграмм"></a></li>
     </ul>
-    <p> Обратная связь:<br>
+    <p class="footer-mail">Обратная связь:<br>
       <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-    <p>Разработано-<br>
+    <p class="footer-mail">Разработано-<br>
       <a href="https://up.htmlacademy.ru/htmlcss/26/project/technomart#specification">htmlacademy.ru</a></p>
+      </div>
   </footer>
   <div>
     <h3> Товар добавлен в корзину!</h3>
