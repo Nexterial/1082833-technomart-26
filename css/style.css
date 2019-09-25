@@ -120,6 +120,11 @@ a {
   box-shadow: inset 0px -5px 0 0 #293449;
   color: #ffffff;
 }
+.main-catalog-h1{
+    background-color: #f2f6f8;
+    font-size: 30px;
+    color: #32425c;
+}
 
 .site-navigation {
   list-style: none;
@@ -219,6 +224,16 @@ a {
     border-left-color: #ee3643;
 
 }
+.button-product{
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    color:#000000;
+    
+}
+.catalog-information{
+    background-color: #f2f6f8;
+    font-family: "PTSans";
+}
 
 
 .contact-info h2 {
@@ -280,3 +295,4 @@ background-color: #32425c;
 .footer-mail a{
     color:#ffd180;
 }
+
